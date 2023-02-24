@@ -1,0 +1,12 @@
+name: 'GitHub Notion Integration'
+description: 'Reflect GitHub updates in Notion pages'
+inputs:
+  notion-api-key:
+    description: 'Notion API Key'
+    required: true
+outputs:
+  pagesUpdated:
+    description: 'The count of updated pages'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
